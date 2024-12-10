@@ -1,50 +1,67 @@
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
-$bodyFont: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-html, body {
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
-  padding: 0;
-  margin: 0;
+html,
+body {
+    background: $backgroundColor;
+    color: $bodyColor;
+    font-family: $bodyFont;
+    padding: 0;
+    margin: 0;
 }
 
 .content {
-  padding: 15px;
+    padding: 15px;
 }
 
 .navbar {
-  display: flex;
-  background-color: black;
-  width: 100vw;
-  margin: 0px;
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    margin: 0px;
 }
 
 .navbar .link {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
 }
 .navbar .link:hover {
-  color: #dedddd;
+    color: #dedddd;
 }
 .navbar .link:active {
-  color: #f29f9f;
+    color: #f29f9f;
 }
 .navbar .link.current {
-  color: #ff6969;
+    color: #ff6969;
 }
 
 .spacer {
-  width: 15px;
+    width: 15px;
 }
 
-h1, h2, h3 {
-  margin: 0px;
+h1,
+h2,
+h3 {
+    margin: 0px;
 }
 
 p {
-  margin: 2px 0px 10px 0px;
+    margin: 2px 0px 10px 0px;
+}
+
+.blog-list {
+    list-style-type: none;
+}
+.post-title {
+    color: black;
+}
+.post {
+    text-decoration: none;
+    color: black;
+}
+.excerpt {
+  color: rgb(121, 0, 121);
 }
