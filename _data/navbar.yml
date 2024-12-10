@@ -3,3 +3,6 @@
 
 - name: "Blog"
   link: "/blog.html"
+
+- name: "Asteroids"
+  link: "https://baker531.github.io/asteroids"
