@@ -1,5 +1,6 @@
 <div class="navbar">
+<div class="spacer"></div>
 {%- for item in site.data.navbar -%}
-<a href="{{ item.link }}" class="link">{{ item.name }} </a> 
+<a href="{{ item.link }}" class="link{% if page.url == item.link %} current{% endif %}">{{ item.name }} </a> 
 {%- endfor -%}
 </div>
