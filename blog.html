@@ -2,13 +2,17 @@
 ---
 
 <h1>Posts</h1>
-<ul class="blog-list">
-{% for post in site.posts %}
-    <a href="{{ post.url }}" class="post">
-    <li>
-        <h2 class="post-title">{{ post.title }}</h2>
-        <div class="excerpt">{{ post.excerpt }}</div>
-    </li>
-    </a>
-{% endfor %}
+{% if site.posts.size == 0 %}
+    I haven't written anything yet.
+{% else %}
+    <ul class="blog-list">
+    {% for post in site.posts %}
+        <a href="{{ post.url }}" class="post">
+        <li>
+            <h2 class="post-title">{{ post.title }}</h2>
+            <div class="excerpt">{{ post.excerpt }}</div>
+        </li>
+        </a>
+    {% endfor %}
+{% endif %}
 </ul>
