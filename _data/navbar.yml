@@ -1,8 +1,8 @@
 - name: "Home"
-  link: "./"
+  link: "https://baker531.github.io"
 
 - name: "Blog"
-  link: "./blog.html"
+  link: "https://baker531.github.io/blog.html"
 
 - name: "Asteroids"
   link: "https://baker531.github.io/asteroids"
