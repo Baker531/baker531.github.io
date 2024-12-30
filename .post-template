@@ -4,5 +4,6 @@ title: The title
 author: Baker
 description: Short description
 topic: What the post is on
+category: the-section
 ---
 Post content here
