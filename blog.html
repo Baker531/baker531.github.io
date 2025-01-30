@@ -1,19 +1,19 @@
 ---
 title: "Blog"
 ---
-
-<h1>Posts</h1>
-{% if site.posts.size == 0 %}
-    I haven't written anything yet.
-{% else %}
-    <ul class="blog-list">
+<h1>Categories</h1>
+{% for category in site.categories %}
+    <a href="{{category.url}}">Category</a>
+{% endfor %}
+<h1>All Posts</h1>
+{% if site.posts.size == 0 %} I haven't written anything yet. {% else %}
+<ul class="blog-list">
     {% for post in site.posts %}
-        <a href="{{ post.url }}" class="post">
+    <a href="{{ post.url }}" class="post">
         <li>
             <h2 class="post-title">{{ post.title }}</h2>
             <div class="excerpt">{{ post.excerpt }}</div>
         </li>
-        </a>
-    {% endfor %}
-{% endif %}
+    </a>
+    {% endfor %} {% endif %}
 </ul>

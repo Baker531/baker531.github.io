@@ -9,3 +9,5 @@ defaults:
       layout: "default"
 exclude:
   - .post-template
+collections:
+  - categories
