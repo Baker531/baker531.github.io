@@ -2,12 +2,12 @@ domain: "https://baker531.github.io" # the base hostname & protocol for your sit
 url: "https://baker531.github.io" # the subpath of your site, e.g. /blog
 title: "Baker's Site" # the name of your site, e.g. ACME Corp.
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+    - scope:
+          path: "" # an empty string here means all files in the project
+      values:
+          layout: "default"
 exclude:
-  - .post-template
+    - .post-template
 collections:
-  - categories
+    categories:
+        output: true

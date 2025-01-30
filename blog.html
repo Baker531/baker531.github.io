@@ -3,7 +3,8 @@ title: "Blog"
 ---
 <h1>Categories</h1>
 {% for category in site.categories %}
-    <a href="{{category.url}}">Category</a>
+    <a href="{{category.url}}" class="excerpt">{{category.title}}</a>
+    <!--TODO Change class name because of general use or make other class-->
 {% endfor %}
 <h1>All Posts</h1>
 {% if site.posts.size == 0 %} I haven't written anything yet. {% else %}
